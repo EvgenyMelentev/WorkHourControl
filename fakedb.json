@@ -1,0 +1,78 @@
+[
+    [
+        {
+            "employee": "Алексей",
+            "shop": "World of cats",
+            "role": "admin",
+            "datePlanFrom": "08:00",
+            "datePlanTo": "19:00",
+            "date": "31.05"
+        },
+        {
+            "employee": "Алексей",
+            "shop": "World of cats",
+            "role": "admin",
+            "datePlanFrom": "08:00",
+            "datePlanTo": "19:00",
+            "date": "30.05"
+        },
+        {
+            "employee": "Алексей",
+            "shop": "World of cats",
+            "role": "admin",
+            "datePlanFrom": "08:00",
+            "datePlanTo": "19:00",
+            "date": "1.06"
+        },
+        {
+            "employee": "Валера",
+            "shop": "World of cats",
+            "role": "genius",
+            "datePlanFrom": "08:00",
+            "datePlanTo": "19:00",
+            "date": "31.05"
+        },
+        {
+            "employee": "Семён",
+            "shop": "World of dogs",
+            "role": "shopMaster",
+            "datePlanFrom": "08:00",
+            "datePlanTo": "19:00",
+            "date": "31.05"
+        },
+        {
+            "employee": "Алёна",
+            "shop": "World of dogs",
+            "role": "localCrazy",
+            "datePlanFrom": "08:00",
+            "datePlanTo": "19:00",
+            "date": "31.05"
+        }
+    ],
+    [
+        {
+            "employee": "Алексей",
+            "shop": "World of cats",
+            "role": "admin",
+            "dateFactFrom": "09:00",
+            "dateFactTo": "18:00",
+            "date": "31.05"
+        },
+        {
+            "employee": "Валера",
+            "shop": "World of cats",
+            "role": "genius",
+            "dateFactFrom": "08:00",
+            "dateFactTo": "19:00",
+            "date": "31.05"
+        },
+        {
+            "employee": "Семён",
+            "shop": "World of dogs",
+            "role": "shopMaster",
+            "dateFactFrom": "08:00",
+            "dateFactTo": "19:00",
+            "date": "31.05"
+        }
+    ]
+]

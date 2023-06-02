@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+.header_container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date_choose {
+    display: flex;
+}
+
+.filters_button {
+    background-color: rgb(97, 169, 223);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.choose_today {
+    margin-right: 10px;
+    background-color: rgb(97, 169, 223);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.four_days {
+    background-color: rgb(97, 169, 223);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    border-radius: 10px 0 0 10px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.week {
+    background-color: rgb(97, 169, 223);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.month {
+    background-color: rgb(97, 169, 223);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.active_button {
+    background-color: rgb(65, 147, 213);
+}
+
+.filters_info {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main_table {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+}
+
+.main_content {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.date_clear {
+    width: 100%;
+    height: 50px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.item {
+    display: flex;
+    flex-shrink: 0;
+    /* height: 300px; */
+    min-width: 100%;
+    /* background-color: aquamarine; */
+
+}
+
+.cell {
+
+    width: 200px;
+
+
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-right: 1px solid gray;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.shop_name {
+    font-size: 20px;
+    font-weight: 800;
+    height: 30px;
+
+}
+
+.item_shop_name {
+    height: 30px;
+
+    width: 100%;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid gray;
+}
+
+.item_employee {
+    height: 100px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan_work {
+    width: 80%;
+    height: 20px;
+    margin: 5px auto;
+    background-color: green;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact_work {
+    width: 80%;
+    height: 20px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            #ccc 10px,
+            #ccc 20px),
+        linear-gradient(to bottom,
+            #eee,
+            #999);
+
+}
+
+.employee_alert {
+    width: 80%;
+    height: 20px;
+    margin: 5px auto;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.employee_alert:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    transition: all 1s;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(78, 116, 134);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(27, 73, 94);
+}
+
+@media only screen and (max-width: 1000px) {
+    .choose_today {
+        margin-right: 10px;
+        background-color: rgb(97, 169, 223);
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .four_days {
+        background-color: rgb(97, 169, 223);
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        border-radius: 10px 0 0 10px;
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .week {
+        background-color: rgb(97, 169, 223);
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .month {
+        background-color: rgb(97, 169, 223);
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        border-radius: 0 10px 10px 0;
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .main_table {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+
+    }
+
+    .main_table_mobile {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+
+    }
+
+    .active_button {
+        background-color: rgb(43, 96, 139);
+    }
+}
